@@ -212,7 +212,7 @@
               <Card.Header>
                 <Card.Title>Product Details</Card.Title>
                 <Card.Description>
-                  Lipsum dolor sit amet, consectetur adipiscing elit
+                  Lipsum dolor sit amet, consectetur adipiscing
                 </Card.Description>
               </Card.Header>
               <Card.Content>
