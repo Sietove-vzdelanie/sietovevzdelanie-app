@@ -1,8 +1,8 @@
 <script>
     import * as Drawer from "$lib/components/ui/drawer";
     import { BadgeInfo } from 'lucide-svelte';
+    import { Button } from "$lib/components/ui/button/index.js";
 
-    export let text = "text";
     export let opentext = "Informácie";
 
 </script>
@@ -18,8 +18,15 @@
         <center>
       <Drawer.Header>
         <center>
-        <Drawer.Title>Sieťové vzdelanie</Drawer.Title>
-        <Drawer.Description>{text}</Drawer.Description>
+        <Drawer.Title><br>Podmienky služby</Drawer.Title>
+        <Drawer.Description>
+            <br>
+            <p>Všetok náš obsah je voľne šíritelný a dostupný pre každého bez akýchkoľvek poplatkov. Obsah nebude nikdy spoplatnený a slúži len na informačné účely.</p>
+            <br>
+            <p>Zdrojový kód tejto webovej stránky spolu s celým obsahom je voľne dostupný na githube pod licenciou GNU GENERAL PUBLIC LICENSE Version 3.</p>
+            <br>
+            <Button href="https://github.com/Sietove-vzdelanie/" variant="outline" size="sm">Github</Button>
+        </Drawer.Description>
     </center>
       </Drawer.Header>
       <Drawer.Footer>
