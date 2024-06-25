@@ -1,6 +1,6 @@
 <script>
   import ChevronLeft from "lucide-svelte/icons/chevron-left";
-  import { Book } from 'lucide-svelte';
+  import { Book } from "lucide-svelte";
   import LineChart from "lucide-svelte/icons/line-chart";
   import Package from "lucide-svelte/icons/package";
   import Package2 from "lucide-svelte/icons/package-2";
@@ -30,17 +30,19 @@
 </script>
 
 <div class="flex min-h-screen w-full flex-col bg-muted/15">
-  <aside class="fixed inset-y-0 left-0 z-10 hidden w-60 flex-col border-r bg-background sm:flex">
+  <aside
+    class="fixed inset-y-0 left-0 z-10 hidden w-60 flex-col border-r bg-background sm:flex"
+  >
     <nav class="flex flex-col items-center gap-4 px-2 py-6">
       <a
         href="##"
         class="group transition-all hover:bg-opacity-90 flex h-9 w-9 shrink-0 items-center justify-center gap-2 rounded-full bg-primary text-lg font-semibold text-primary-foreground md:h-8 md:w-24 md:text-base"
       >
-      <div class="flex items-center gap-2">  
-        <Book class="h-4 w-4 transition-all" />
-        <p>Kurzy</p>
-        <span class="sr-only">Kurzy</span>
-      </div>
+        <div class="flex items-center gap-2">
+          <Book class="h-4 w-4 transition-all" />
+          <p>Kurzy</p>
+          <span class="sr-only">Kurzy</span>
+        </div>
       </a>
       <Tooltip.Root>
         <Tooltip.Trigger asChild let:builder>
@@ -114,7 +116,7 @@
       </Tooltip.Root>
     </nav>
     <nav class="mt-auto flex flex-col items-center gap-4 px-2 py-6">
-      <InfoDrawer/>
+      <InfoDrawer />
       <span class="sr-only">Info</span>
     </nav>
   </aside>
@@ -124,7 +126,12 @@
     >
       <Sheet.Root>
         <Sheet.Trigger asChild let:builder>
-          <Button builders={[builder]} size="icon" variant="outline" class="sm:hidden">
+          <Button
+            builders={[builder]}
+            size="icon"
+            variant="outline"
+            class="sm:hidden"
+          >
             <PanelLeft class="h-5 w-5" />
             <span class="sr-only">Toggle Menu</span>
           </Button>
@@ -142,7 +149,7 @@
               href="##"
               class="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
             >
-              <Home class="h-5 w-5" />
+              <Package class="h-5 w-5" />
               Dashboard
             </a>
             <a
@@ -188,7 +195,6 @@
           </Breadcrumb.Item>
         </Breadcrumb.List>
       </Breadcrumb.Root>
-      
     </header>
     <main class="grid flex-1 items-start gap-4 p-4 sm:px-6 sm:py-0 md:gap-8">
       <div class="mx-auto grid max-w-[59rem] flex-1 auto-rows-max gap-6">
@@ -203,11 +209,15 @@
             Sieťové technológie
           </h1>
           <div class="hidden items-center gap-2 md:ml-auto md:flex">
-            <Badge variant="outline" class="ml-auto sm:ml-0">Upravené: {updateDate}</Badge>
+            <Badge variant="outline" class="ml-auto sm:ml-0"
+              >Upravené: {updateDate}</Badge
+            >
           </div>
         </div>
         <div class="grid gap-4 lg:grid-cols-1 lg:gap-8">
-          <div class="grid auto-rows-max items-start gap-4 lg:col-span-2 lg:gap-8">
+          <div
+            class="grid auto-rows-max items-start gap-4 lg:col-span-2 lg:gap-8"
+          >
             <Card.Root>
               <Card.Header>
                 <Card.Title>Product Details</Card.Title>
@@ -350,16 +360,10 @@
                         <Select.Item value="clothing" label="Clothing"
                           >Clothing</Select.Item
                         >
-                        <Select.Item
-                          value="electronics"
-                          label="Electronics"
-                        >
+                        <Select.Item value="electronics" label="Electronics">
                           Electronics
                         </Select.Item>
-                        <Select.Item
-                          value="accessories"
-                          label="Accessories"
-                        >
+                        <Select.Item value="accessories" label="Accessories">
                           Accessories
                         </Select.Item>
                       </Select.Content>
@@ -381,10 +385,7 @@
                         <Select.Item value="hoodies" label="Hoodies"
                           >Hoodies</Select.Item
                         >
-                        <Select.Item
-                          value="sweatshirts"
-                          label="Sweatshirts"
-                        >
+                        <Select.Item value="sweatshirts" label="Sweatshirts">
                           Sweatshirts
                         </Select.Item>
                       </Select.Content>
